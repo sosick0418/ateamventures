@@ -13,7 +13,6 @@ module.exports = {
   rules: {
     "linebreak-style": 0,
     "import/prefer-default-export": 0,
-    "prettier/prettier": 0,
     "import/extensions": 0,
     "no-use-before-define": 0,
     "import/no-unresolved": 0,
@@ -28,6 +27,21 @@ module.exports = {
     ],
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
+    "prettier/prettier": [
+      1,
+      {
+        singleQuote: false,
+        semi: true,
+        useTabs: false,
+        tabWidth: 2,
+        trailingComma: "all",
+        printWidth: 80,
+        arrowParens: "avoid",
+        orderedImports: true,
+        bracketSpacing: true,
+        jsxBracketSameLine: false,
+      },
+    ],
   },
   settings: {
     "import/resolver": {
